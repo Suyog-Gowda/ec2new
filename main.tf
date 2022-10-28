@@ -1,11 +1,6 @@
 terraform {
-	backend "s3" {
-		bucket = "suyogs31990"
-		key = "terraform/remotestate/terraform.tfstate"
-		region = "ap-south-1"
-		
-		dynamodb_table = "suyogdb"
-		encrypt = true
+	backend "local" {
+	  path = "C:/Users/SUYOG/OneDrive/Desktop/Terraform/Ec2/terraform.tfstate.d/dev"
 	}
 }
 
