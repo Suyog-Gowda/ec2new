@@ -1,5 +1,12 @@
+terraform {
+	backend "local" {
+	  path = "C:/Users/SUYOG/OneDrive/Desktop/Terraform/Ec2/terraform.tfstate.d/dev"
+	}
+}
 provider "aws" {
 	region = "ap-south-1"
+	access_key = AKIA3NKZCAXHMMSA5ENT
+	secret_key = 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
 }
 
 resource "aws_instance" "instance-ec2" {
