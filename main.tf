@@ -12,6 +12,6 @@ resource "aws_instance" "instance-ec2" {
 	instance_type = "t2.micro"
 	key_name = "Suyog"
 	tags = {
-	    Name = "Trial_instance"
+	    Name = "Trial_instanc"
 	}
 }
